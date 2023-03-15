@@ -1,0 +1,15 @@
+#server:
+#  port: 8083
+#  servlet:
+#    context-path: /chat
+#spring:
+#  application:
+#    name: myChat
+#  main:
+#    allow-bean-definition-overriding: true
+#  #环境 dev|test|prod
+#  profiles:
+#    active: dev
+#  messages:
+#    encoding: UTF-8
+#    basename: i18n/messages_common,i18n/messages

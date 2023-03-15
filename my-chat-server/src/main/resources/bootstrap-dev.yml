@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        group: MY_CLOUD_GROUP
+        namespace: ns_dev
+        server-addr: ${nacos-host:localhost}:${nacos-port:8848}
+      discovery:
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+        group: ${spring.cloud.nacos.config.group}
+        namespace: ${spring.cloud.nacos.config.namespace}
